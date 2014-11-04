@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Small -->
+
+    <style name="style_small_appearance_small" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="style_small_appearance_medium" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="style_small_appearance_large" parent="@android:style/TextAppearance">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- Medium -->
+
+    <style name="style_medium_appearance_small" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="style_medium_appearance_medium" parent="@android:style/TextAppearance">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="style_medium_appearance_large" parent="@android:style/TextAppearance">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!-- Large -->
+
+    <style name="style_large_appearance_small" parent="@android:style/TextAppearance">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="style_large_appearance_medium" parent="@android:style/TextAppearance">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="style_large_appearance_large" parent="@android:style/TextAppearance">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+</resources>

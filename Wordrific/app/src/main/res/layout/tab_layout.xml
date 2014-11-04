@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/black"
+              android:orientation="horizontal"
+              android:weightSum="4">
+
+    <ImageView
+        android:id="@+id/tab_about"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:onClick="onSelectTabAbout"
+        android:src="@drawable/tab_indicator_rule"/>
+
+    <ImageView
+        android:id="@+id/tab_play"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:onClick="onSelectTabGameplay"
+        android:src="@drawable/tab_indicator_play"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/tab_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:onClick="onSelectTabFriend"
+            android:src="@drawable/tab_indicator_friend"/>
+
+        <RelativeLayout
+            android:id="@+id/tab_notification_container"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/circle"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/tab_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:textColor="@android:color/white"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tab_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:onClick="onSelectTabAccount"
+        android:src="@drawable/tab_indicator_me"/>
+
+</LinearLayout>

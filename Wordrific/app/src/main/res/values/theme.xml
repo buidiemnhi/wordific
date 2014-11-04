@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="style_small" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:textAppearanceSmall">@style/style_small_appearance_small</item>
+        <item name="android:textAppearanceMedium">@style/style_small_appearance_medium</item>
+        <item name="android:textAppearanceLarge">@style/style_small_appearance_large</item>
+    </style>
+
+
+    <style name="style_medium" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:textAppearanceSmall">@style/style_medium_appearance_small</item>
+        <item name="android:textAppearanceMedium">@style/style_medium_appearance_medium</item>
+        <item name="android:textAppearanceLarge">@style/style_medium_appearance_large</item>
+    </style>
+
+
+    <style name="style_large" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:textAppearanceSmall">@style/style_large_appearance_small</item>
+        <item name="android:textAppearanceMedium">@style/style_large_appearance_medium</item>
+        <item name="android:textAppearanceLarge">@style/style_large_appearance_large</item>
+    </style>
+
+</resources>

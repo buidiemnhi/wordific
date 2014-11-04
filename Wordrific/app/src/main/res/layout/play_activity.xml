@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout">
+
+    <View
+        android:id="@+id/bonus_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:background="@color/light_green" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:id="@+id/top_panel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/exit_button"
+                android:onClick="onExit"
+                android:src="@drawable/bg_exit" />
+
+            <Chronometer
+                android:id="@+id/play_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/play_timer_icon"
+                android:layout_toStartOf="@+id/play_timer_icon"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textStyle="bold"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/play_timer"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_toLeftOf="@+id/play_timer_icon"-->
+                <!--android:layout_toStartOf="@+id/play_timer_icon"-->
+                <!--android:gravity="center"-->
+                <!--android:text="99"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />-->
+
+            <ImageView
+                android:id="@id/play_timer_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:src="@drawable/bg_clock" />
+
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/play_puzzle"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_above="@+id/middle_panel"
+            android:layout_below="@id/top_panel"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp" />
+
+        <RelativeLayout
+            android:id="@+id/middle_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/answer_panel"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/play_difficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="2/20 Medium"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/play_coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/point_icon"
+                android:layout_toStartOf="@+id/point_icon"
+                android:text="298 points"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@id/point_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:src="@drawable/bg_coin" />
+
+        </RelativeLayout>
+
+        <!--<ImageView-->
+        <!--android:id="@+id/first_divider"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/answer_panel"-->
+        <!--android:src="@drawable/bg_dots"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:cropToPadding="true"/>-->
+
+        <TableRow
+            android:id="@+id/answer_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/second_divider"
+            android:layout_marginBottom="3dp">
+
+            <ImageView
+                android:id="@+id/play_skip"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:onClick="onSkip"
+                android:src="@drawable/bg_skip_2" />
+
+            <ImageView
+                android:id="@+id/play_answer"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:onClick="onAnswer"
+                android:src="@drawable/bg_answer_2" />
+
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/second_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/play_clue_title"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:src="@drawable/bg_dots" />
+
+        <TextView
+            android:id="@+id/play_clue_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/clue_panel"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:text="CLUE"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/clue_panel"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_above="@+id/control_clue_panel"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_clue">
+
+            <WebView
+                android:id="@+id/play_clue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="6dp"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <!--<ImageView-->
+        <!--android:id="@+id/third_divider"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/control_clue_panel"-->
+        <!--android:src="@drawable/bg_dots"/>-->
+
+        <LinearLayout
+            android:id="@id/control_clue_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:baselineAligned="false"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/play_previous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:onClick="onPreviousClue"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_previous_clue" />
+
+                <TextView
+                    android:id="@+id/play_previous_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="PREVIOUS"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/play_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:onClick="onNextClue"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_next_clue" />
+
+                <TextView
+                    android:id="@+id/play_next_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="NEXT (5)"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

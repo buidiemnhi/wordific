@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.evilgeniustechnologies.Wordrific.core.activities.InviteActivity"
+    android:padding="6dp">
+
+    <EditText
+        android:id="@+id/invite_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:inputType="textEmailAddress"/>
+
+    <Button
+        android:id="@+id/invite_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/invite_email"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dawn_button"
+        android:text="@string/invite_button"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

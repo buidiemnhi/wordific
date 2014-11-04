@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_buy_screen"
+                android:orientation="vertical"
+                android:weightSum="100"
+                tools:context="com.evilgeniustechnologies.Wordrific.core.activities.ListServiceActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_up"/>
+
+    <include
+        android:id="@+id/service_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        layout="@layout/list_container"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_down"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:textColor="@android:color/white"
+        android:src="@drawable/bg_buy_more"
+        android:onClick="onBuy"/>
+
+</LinearLayout>

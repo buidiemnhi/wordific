@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp">
+
+    <ImageView
+        android:id="@+id/connect_row_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:contentDescription="@string/connect_icon"
+        android:src="@drawable/default_avatar1"/>
+
+    <TextView
+        android:id="@+id/connect_row_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/connect_row_icon"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageButton
+        android:id="@+id/connect_row_accept"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/connect_row_reject"
+        android:background="@drawable/bg_accept"
+        android:visibility="visible"/>
+
+    <ImageButton
+        android:id="@id/connect_row_reject"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_reject"
+        android:visibility="visible"/>
+
+</RelativeLayout>

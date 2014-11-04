@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_connect"
+                tools:context="com.evilgeniustechnologies.Wordrific.core.activities.ConnectActivity">
+
+    <View
+        android:id="@+id/foundation"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="150dp"/>
+
+    <ExpandableListView
+        android:id="@+id/connect_expand_list"
+        android:layout_below="@id/foundation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:groupIndicator="@null"
+        android:layout_above="@+id/connect_search"/>
+
+    <ImageView
+        android:id="@id/connect_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/bg_search"
+        android:onClick="onSearch"/>
+
+</RelativeLayout>

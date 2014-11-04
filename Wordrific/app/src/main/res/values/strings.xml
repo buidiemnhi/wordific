@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wordrific</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_service">ServiceActivity</string>
+    <string name="title_activity_list_service">ListServiceActivity</string>
+    <string name="buy_more_sets">Buy more sets</string>
+    <string name="title_activity_buy">Buy More Sets</string>
+    <string name="menu_play">Play</string>
+    <string name="menu_friend">Friends</string>
+    <string name="menu_rule">Rules</string>
+    <string name="menu_me">Me</string>
+
+    <string-array name="sell_sets">
+        <item>5 sets</item>
+        <item>10 sets</item>
+        <item>15 sets</item>
+        <item>20 sets</item>
+        <item>30 sets</item>
+        <item>50 sets</item>
+        <item>100 sets</item>
+    </string-array>
+    <string-array name="sell_prices">
+        <item>1 USD</item>
+        <item>2 USD</item>
+        <item>3 USD</item>
+        <item>4 USD</item>
+        <item>5 USD</item>
+        <item>7 USD</item>
+        <item>15 USD</item>
+    </string-array>
+    <string-array name="sell_sku_ids">
+        <item>sku_1</item>
+        <item>sku_2</item>
+        <item>sku_3</item>
+        <item>sku_4</item>
+        <item>sku_5</item>
+        <item>sku_6</item>
+    </string-array>
+
+    <string name="title_activity_connect">Friends</string>
+    <string name="connect_friend">Friends</string>
+    <string name="connect_request">Friend Requests</string>
+    <string name="connect_search">Search Friends</string>
+    <string name="title_activity_me">MeActivity</string>
+    <string name="connect_icon">connect_icon</string>
+    <string name="connect_row_accept">Accept</string>
+    <string name="connect_row_reject">Reject</string>
+    <string name="label_connect">Friends</string>
+    <string name="title_activity_friend">Search Friends</string>
+    <string name="friend_row_connect">Make Friend</string>
+    <string name="request_pending">Request Pending</string>
+    <string name="action_search">Search</string>
+    <string name="title_activity_invite">Invite</string>
+    <string name="invite_button">Invite</string>
+    <string name="menu_add">Invite</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="progress">Loading…</string>
+    <string name="downloading">Downloading data…</string>
+    <string name="check_for_update">Checking for update</string>
+
+    <!-- Parse Info -->
+    <string name="parse_appId">c84OAMINs9X1Kc1aTtEkBI703N0oYAd0gZ9o7sOT</string>
+    <string name="parse_client">mAihiMTDTparmsAFfR6o3V1Ob66zLZpq2JBe5GZp</string>
+
+    <!-- Tab ID-->
+    <string name="tab_play">Play</string>
+    <string name="tab_friend">Friend</string>
+    <string name="tab_rule">Rule</string>
+    <string name="tab_me">Me</string>
+    <string name="play_title">Play Activity</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="answer">Answer</string>
+    <string name="image_puzzle">Image Puzzle</string>
+    <string name="exit_button">Exit Button</string>
+    <string name="game_over">Game Over</string>
+    <string name="no_email">Please enter email</string>
+    <string name="no_password">Please enter password</string>
+    <string name="login_success">Login successful</string>
+    <string name="no_first_name">Please enter first name</string>
+    <string name="no_last_name">Please enter last name</string>
+    <string name="no_retry_password">Please enter retry password</string>
+    <string name="password_mismatch">Password mismatch</string>
+    <string name="register_success">Register successful</string>
+    <string name="register_title">Register</string>
+    <string name="login_title">Login</string>
+    <string name="invalid_email_address">Invalid email address</string>
+    <string name="make_friend">Friend request sent</string>
+    <string name="no_internet">Please connect to the Internet</string>
+
+</resources>

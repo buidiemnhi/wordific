@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_layout"
+                android:padding="6dp">
+
+    <RelativeLayout
+        android:id="@+id/login_email_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:src="@drawable/bg_edittext"/>
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_password_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_email_container"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:src="@drawable/bg_edittext"/>
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/login_password_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:onClick="onLogin"
+        android:src="@drawable/bg_login"/>
+
+    <ImageView
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:onClick="onRegister"
+        android:src="@drawable/bg_signup"/>
+
+</RelativeLayout>
